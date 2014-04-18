@@ -15,6 +15,7 @@
     "https://www.pandora.com/*",
     "http://pandora.com/*",
     "https://pandora.com/*",
+    "http://www.youtube-mp3.org/*"
   ],
   "content_scripts": [
     {

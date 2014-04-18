@@ -1,0 +1,50 @@
+first request
+
+http://www.youtube-mp3.org/a/pushItem/
+?item= escape(g("youtube-url").value)
+&el=na
+&bf=false
+&r=a.getTime()          var a = new Date;
+
+
+g = function (a) {
+    return document.getElementById(a)
+};
+
+
+keep asking for http://www.youtube-mp3.org//a/itemInfo/?video_id=" + video_id + "&ac=www&t=grp&r=" + a.getTime() 
+
+until 
+
+info.status : "serving"
+
+
+i am done, just need to download
+
+
+http://www.youtube-mp3.org/get?ab=128&video_id=" + video_id + "&h=" + info.h + "&r=" + a + "." + cc(video_id + a)
+
+var a = tstamp();
+
+tstamp = function () {
+    return (new Date).getTime()
+};
+
+
+cc = function (a) {
+    try {
+        return _cc(a)
+    } catch (b) {}
+    return 0
+};
+
+function _cc(a) {
+    if ("string" != typeof a) throw Error("se");
+    var b = 1,
+        c = 0,
+        d, e;
+    for (e = 0; e < a.length; e++) d = a.charCodeAt(e), b = (b + d) % __AM, c = (c + b) % __AM;
+    return c << 16 | b
+}
+
+

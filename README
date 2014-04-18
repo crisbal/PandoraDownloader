@@ -9,12 +9,11 @@ It is just a simple script and it could be easly ported to other websites and ot
 I might do a Groovesahrk version too.
 
 
+In the beginning this was born together with a Python Flask server that would download the song for the extension and then give the user the url, but now I reverse-engineered youtube-mp3.org to do the job for me. (You will find moe about this in the "youtube-mp3.org api" folder)
 
-In the beginning this was born together with a Python Flask server that would download the song for the extension and then give the user the url, but now I am using http://youtubeinmp3.com/api/ to do the work for me. 
+Using that website is better both for you and me. 
 
-This is better both for you and me. 
-
-For me because I don't need to keep a Flask server running or have you to install it on your own machine to use the extension, and for you because with that website you get decent download speed and does everything for you.
+For me because I don't need to keep a Flask server running or have you to install it on your own machine to use the extension, and for you because with that website you get decent download speed and it does everything for you.
 
 
 
