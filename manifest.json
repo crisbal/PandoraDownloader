@@ -1,0 +1,34 @@
+{
+  "name": "Pandora Downloader",
+  "version": "0.1",
+  "manifest_version": 2,
+  "description": "Pandora Downloader. This extension download the song you are listening on Pandora from YouTube.",
+  "homepage_url": "http://reddit.com/u/cris9696",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "default_locale": "en",
+  "permissions": [
+    "http://www.pandora.com/*",
+    "https://www.pandora.com/*",
+    "http://pandora.com/*",
+    "https://pandora.com/*",
+    "http://127.0.0.1:5000/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "http://www.pandora.com/*",
+    	"https://www.pandora.com/*",
+    	"http://pandora.com/*",
+    	"https://pandora.com/*"
+      ],
+      "js": [
+        "src/inject/jquery.js",
+        "src/inject/inject.js"
+      ]
+    }
+  ]
+}
