@@ -10,3 +10,11 @@ I might do a Groovesahrk version too.
 
 
 
+In the beginning this was born together with a Python Flask server that would download the song for the extension and then give the user the url, but now I am using http://youtubeinmp3.com/api/ to do the work for me. 
+
+This is better both for you and me. 
+
+For me because I don't need to keep a Flask server running or have you to install it on your own machine to use the extension, and for you because with that website you get decent download speed and does everything for you.
+
+
+
